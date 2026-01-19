@@ -22,17 +22,25 @@ A brief description of what your app will do
 ''' Schema
 # FIXME Determine path forward with this. I have written a similar program in SDEV-120 using lists, it turns into a mess. I'll try this as an OOP program first.  
 '''
-# create class studentRecord with string fname, lname, and float gpa. 
+'''# create class studentRecord with string fname, lname, and float gpa. 
 class studentRecord:
+    instance_incrementor: int = 0
 
-    def __int__(self, lname: str, fname: str, gpa: float):
-        self.lname = lname
-        self.fname = fname
-        self.gpa = gpa
+    def __int__(self):
+        self.lname = str(input('Enter student first name: '))
+        self.fname = str(input('Enter student first name: '))
+        self.gpa = float(input('Enter student gpa: '))
+        studentRecord.instance_incrementor += 1
 
-lname = str(input('Enter student first name: '))
-fname = str(input('Enter student first name: '))
-gpa = float(input('Enter student gpa: '))
 
-print(studentRecord.__dict__)
+last_name = str(input('Enter student first name: '))
+first_name = str(input('Enter student first name: '))
+usr_in_gpa = float(input('Enter student gpa: '))
+
+lname = last_name
+fname = first_name
+gpa = usr_in_gpa
+
+
+print(studentRecord.__dict__)'''
 
