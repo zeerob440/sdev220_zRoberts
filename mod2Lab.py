@@ -44,7 +44,7 @@ while True:
     if gpa >= on_the_dl:
         print(dl_message)
     elif gpa >= on_the_hr and gpa <= on_the_dl:
-        print(on_the_hr)
+        print(hr_message)
     else:
         print(no_easy_way)
 
