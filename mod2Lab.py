@@ -28,9 +28,10 @@ last_name: str = ''
 first_name: str = ''
 gpa: float = 0 
 on_the_dl: float = float(3.5)
-honor_roll: float = float(3.25)
+on_the_hr: float = float(3.25)
 dl_message: str = ("This student has made the Dean's List.")
-on_the_hr: str =('this student is on the Honor Roll.')
+hr_message: str =('This student is on the Honor Roll.')
+no_easy_way: str = ('Student did not make any academic list.')
 
 
 while True:
@@ -40,7 +41,13 @@ while True:
     first_name: str = input('Enter student first name: ')
     gpa: float = float(input('Enter student gpa: '))
 
-    if gpa >= on_the_dl 
+    if gpa >= on_the_dl:
+        print(dl_message)
+    elif gpa >= on_the_hr and gpa <= on_the_dl:
+        print(on_the_hr)
+    else:
+        print(no_easy_way)
+
 
 print('end_program')   
 
