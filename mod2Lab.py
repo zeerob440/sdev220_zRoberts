@@ -21,21 +21,34 @@ A brief description of what your app will do
 
 ''' Schema
 # FIXME Determine path forward with this. I have written a similar program in SDEV-120 using lists, it turns into a mess. I'll try this as an OOP program first.  
+
+
 '''
 last_name: str = ''
 first_name: str = ''
 gpa: float = 0 
-lnames: list = []
-fnames: list = []
-str_gpas: list = []
-student_id = 1 # unique id may be used as a dict key
-student_records: dict = {student_id: [last_name, first_name, gpa]}
+on_the_dl: float = float(3.5)
+honor_roll: float = float(3.25)
+dl_message: str = ("This student has made the Dean's List.")
+on_the_hr: str =('this student is on the Honor Roll.')
+
+
+while True:
+    last_name: str = input('Enter student last name: ')
+    if last_name == 'ZZZ':
+        break
+    first_name: str = input('Enter student first name: ')
+    gpa: float = float(input('Enter student gpa: '))
+
+    if gpa >= on_the_dl 
+
+print('end_program')   
 
 
 
 
-
-'''# create class studentRecord with string fname, lname, and float gpa. 
+'''
+# create class studentRecord with string fname, lname, and float gpa. 
 class studentRecord:
     instance_incrementor: int = 0
 
@@ -55,5 +68,6 @@ fname = first_name
 gpa = usr_in_gpa
 
 
-print(studentRecord.__dict__)'''
+print(studentRecord.__dict__)
+'''
 
