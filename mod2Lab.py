@@ -39,17 +39,17 @@ while True:
     if last_name == 'ZZZ':
         break
     else:
-         print(f'{last_name} accepted!\n')
+         print(f'"{last_name}" accepted!\n')
                 
     first_name: str = input('Enter student first name: ')
-    print(f'{first_name} accepted!')
+    print(f'"{first_name}" accepted!')
     while True:
         try:
             gpa: float = float(input('Enter student gpa: '))
             print('GPA accepted!')
             break
         except ValueError:
-            print('Enter a float!')
+            print('Enter a float!\n')
     # process user inputs
     if gpa >= on_the_dl:
         print(dl_message)
