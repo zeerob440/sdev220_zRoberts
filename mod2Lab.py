@@ -22,9 +22,15 @@ A brief description of what your app will do
 ''' Schema
 # FIXME Determine path forward with this. I have written a similar program in SDEV-120 using lists, it turns into a mess. I'll try this as an OOP program first.  
 '''
+# create class studentRecord with string fname, lname, and float gpa. 
 class studentRecord:
-    def __int__(self, fname: str, lname: str, gpa: float):
-        self.fname = fname 
+
+    def __int__(self, lname: str, fname: str, gpa: float):
         self.lname = lname
+        self.fname = fname
         self.gpa = gpa
+
+lname = str(input('Enter student first name: '))
+fname = str(input('Enter student first name: '))
+gpa = float(input('Enter student gpa: '))
 
