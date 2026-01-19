@@ -7,16 +7,16 @@ Specifications:
 
 Write a Python app that will accept student names and GPAs and test if the student qualifies for either the Dean's List or the Honor Roll. Your app will:
 ask for and accept a student's last name.
-quit processing student records if the last name entered is 'ZZZ'.
-ask for and accept a student's first name. 
-ask for and accept the student's GPA as a float.
-test if the student's GPA is 3.5 or greater and, if so, print a message saying that the student has made the Dean's List.
-test if the student's GPA is 3.25 or greater and, if so, print a message saying that the student has made the Honor Roll.
-Test your app using at least five students.
-Your header comments need to contain
-Your name
-The file name for your app
-A brief description of what your app will do
+quit processing student records if the last name entered is 'ZZZ'. # program exits student input when "ZZZ" is applied to last_name
+ask for and accept a student's first name. # provides acceptance message upon input
+ask for and accept the student's GPA as a float. # uses input validation to process float, provides message when input is correctly entered.
+test if the student's GPA is 3.5 or greater and, if so, print a message saying that the student has made the Dean's List. # data is processed
+test if the student's GPA is 3.25 or greater and, if so, print a message saying that the student has made the Honor Roll. # data is processed
+Test your app using at least five students. # app can process as many students as the user can stand to enter
+Your header comments need to contain # comments present
+Your name # line 3
+The file name for your # app line 2
+A brief description of what your app will do # line 5
 '''
 
 ''' Schema
@@ -50,7 +50,7 @@ while True:
             break
         except ValueError:
             print('Enter a float!\n')
-    # process user inputs
+    # processes user inputs
     if gpa >= on_the_dl:
         print(dl_message)
     elif gpa >= on_the_hr and gpa <= on_the_dl:
