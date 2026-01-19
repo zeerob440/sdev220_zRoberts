@@ -23,9 +23,10 @@ A brief description of what your app will do
 # FIXME Determine path forward with this. I have written a similar program in SDEV-120 using lists, it turns into a mess. I'll try this as an OOP program first.  
 '''
 student_records = []
+while 
 user_input: str= input('Enter "ZZZ" to quit. Enter last name, first name, and gpa followed by space').split()
-
 student_records.append(user_input)
+
 print(user_input)
 print(student_records)
 
