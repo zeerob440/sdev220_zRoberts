@@ -34,3 +34,5 @@ lname = str(input('Enter student first name: '))
 fname = str(input('Enter student first name: '))
 gpa = float(input('Enter student gpa: '))
 
+print(studentRecord.__dict__)
+
