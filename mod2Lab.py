@@ -26,8 +26,8 @@ OOP proved to be too difficult at my current skill level, but I believe I was ov
 last_name: str = ''
 first_name: str = ''
 gpa: float = 0 
-on_the_dl: float = float(3.5)
-on_the_hr: float = float(3.25)
+ON_THE_DL: float = float(3.5)
+ON_THE_HR: float = float(3.25)
 dl_message: str = ("This student has made the Dean's List.\n")
 hr_message: str =('This student is on the Honor Roll.\n')
 no_easy_way: str = ('Student did not make any academic list.\n')
@@ -51,9 +51,9 @@ while True:
         except ValueError:
             print('Enter a float!\n')
     # processes user inputs
-    if gpa >= on_the_dl:
+    if gpa >= ON_THE_DL:
         print(dl_message)
-    elif gpa >= on_the_hr and gpa <= on_the_dl:
+    elif gpa >= ON_THE_HR and gpa <= ON_THE_DL:
         print(hr_message)
     else:
         print(no_easy_way)
