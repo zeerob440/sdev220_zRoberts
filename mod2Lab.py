@@ -42,11 +42,11 @@ while True:
          print(f'"{last_name}" accepted!\n')
                 
     first_name: str = input('Enter student first name: ')
-    print(f'"{first_name}" accepted!')
+    print(f'"{first_name}" accepted!\n')
     while True:
         try:
             gpa: float = float(input('Enter student gpa: '))
-            print('GPA accepted!')
+            print('GPA accepted!\n')
             break
         except ValueError:
             print('Enter a float!\n')
