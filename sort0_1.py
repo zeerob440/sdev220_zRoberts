@@ -21,11 +21,17 @@ Explanation: 0s, 1s and 2s are segregated into ascending order.
 
 arr: list = [0, 1, 2, 0, 1, 2]
 
-arr.reverse()
+sort_sequence: list = []
 
-sum =arr.sum()
+for order, number in enumerate(arr):
+    sort_sequence.append(order)
 
-print(sum)
+print(sort_sequence)
+
+
+
+
+
 
 
 
