@@ -35,7 +35,7 @@ Explanation: 0s, 1s and 2s are segregated into ascending order.
 
         return print(sort_sequence)'''
 
-arr: list = [0, 1, 2, 0, 1, 2]
+
 
 #soupSandwichMaker(arr)
 
@@ -49,7 +49,7 @@ arr: list = [0, 1, 2, 0, 1, 2]
 #print(arr)
 
 
-
+arr: list = [0, 1, 2, 0, 1, 2]
 sort_sequence: list = []
 
 for number in arr:
@@ -59,9 +59,9 @@ for number in arr:
         sort_sequence.append(number)
     if number == 2:
         sort_sequence.append(number)
-arr = sort_sequence
+#arr = sort_sequence
 
-print(arr) 
+print(sort_sequence) 
 
 
 
