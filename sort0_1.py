@@ -30,8 +30,9 @@ for number in arr:
         sort_sequence.append(number)
     if number == 2:
         sort_sequence.append(number)
+aar = sort_sequence
 
-print(sort_sequence)
+print(aar)
 
 
 
