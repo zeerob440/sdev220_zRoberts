@@ -23,28 +23,27 @@ Explanation: 0s, 1s and 2s are segregated into ascending order.
 #def soupSandwichMaker(arr):
 
 
-
 arr: list = [0, 1, 2, 0, 1, 2]
 sort_sequence: list = []
-
+# get 0's into sort_sequence
 for number in arr:
     if number == 0:
         sort_sequence.append(number)
         
-
+# get 1 into sort_sequence
 for number in arr:
     if number == 1:
         sort_sequence.append(number)
        
-
+# get 2's into sort_sequence
 for number in arr:
     if number == 2:
         sort_sequence.append(number)
-        
-arr = sort_sequence
 
-#print(arr)  
-print(sort_sequence) 
+# make arr == sort_sequence        
+arr = sort_sequence
+  
+print(arr) 
 
 
 
