@@ -23,10 +23,19 @@ arr: list = [0, 1, 2, 0, 1, 2]
 
 sort_sequence: list = []
 
-for order, number in enumerate(arr):
-    sort_sequence.append(order)
+for number in range(len(arr)):
+    
+    if number <= 0:
+        sort_sequence.append(number)
+    if number <= 1:
+        sort_sequence.append(number)
+    if number <= 2:
+        sort_sequence.append(number)
 
 print(sort_sequence)
+
+
+
 
 
 
