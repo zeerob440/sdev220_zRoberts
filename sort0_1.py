@@ -20,33 +20,8 @@ Explanation: 0s, 1s and 2s are segregated into ascending order.
 '''
 
 # It makes soup sandwiches. 
-'''def soupSandwichMaker(arr):
-    
-        sort_sequence: list = []
+#def soupSandwichMaker(arr):
 
-        for number in arr:
-            if number == 0:
-                sort_sequence.append(number)
-            if number == 1:
-                sort_sequence.append(number)
-            if number == 2:
-                sort_sequence.append(number)
-        arr = sort_sequence 
-
-        return print(sort_sequence)'''
-
-
-
-#soupSandwichMaker(arr)
-
-#print(arr)
-
-
-#arr: list = [0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1]
-
-#soupSandwichMaker(arr)
-
-#print(arr)
 
 
 arr: list = [0, 1, 2, 0, 1, 2]
@@ -55,20 +30,20 @@ sort_sequence: list = []
 for number in arr:
     if number == 0:
         sort_sequence.append(number)
-        #arr.remove(number)
+        
 
 for number in arr:
     if number == 1:
         sort_sequence.append(number)
-        #arr.remove(number)
+       
 
 for number in arr:
     if number == 2:
         sort_sequence.append(number)
-        #arr.remove(number)
+        
+arr = sort_sequence
 
-
-print(arr)  
+#print(arr)  
 print(sort_sequence) 
 
 
