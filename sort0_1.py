@@ -19,7 +19,36 @@ Output: [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2]
 Explanation: 0s, 1s and 2s are segregated into ascending order.
 '''
 
+# It makes soup sandwiches. 
+'''def soupSandwichMaker(arr):
+    
+        sort_sequence: list = []
+
+        for number in arr:
+            if number == 0:
+                sort_sequence.append(number)
+            if number == 1:
+                sort_sequence.append(number)
+            if number == 2:
+                sort_sequence.append(number)
+        arr = sort_sequence 
+
+        return print(sort_sequence)'''
+
 arr: list = [0, 1, 2, 0, 1, 2]
+
+#soupSandwichMaker(arr)
+
+#print(arr)
+
+
+#arr: list = [0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1]
+
+#soupSandwichMaker(arr)
+
+#print(arr)
+
+
 
 sort_sequence: list = []
 
@@ -30,13 +59,9 @@ for number in arr:
         sort_sequence.append(number)
     if number == 2:
         sort_sequence.append(number)
-aar = sort_sequence
+arr = sort_sequence
 
-print(aar)
-
-
-
-
+print(arr) 
 
 
 
