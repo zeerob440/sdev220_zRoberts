@@ -19,9 +19,9 @@ Output: [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2]
 Explanation: 0s, 1s and 2s are segregated into ascending order.
 '''
 
-# It makes soup sandwiches. 
-def soupSandwichMaker(arr):
-    # stores sandwich ingredients 
+# It unmakes soup sandwiches. 
+def unSoupSandwichMaker(arr):
+    # stores soup sandwich ingredients, reconstitutes order. (actual sandwiches) 
     sort_sequence: list = []
     # get 0's into sort_sequence
     for number in arr:
@@ -45,11 +45,11 @@ def soupSandwichMaker(arr):
 
 arr: list = [0, 1, 2, 0, 1, 2]
 
-soupSandwichMaker(arr)
+unSoupSandwichMaker(arr)
 
-arr:list = [0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1] 
+arr: list = [0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1] 
 
-soupSandwichMaker(arr)
+unSoupSandwichMaker(arr)
 
 
 
