@@ -25,3 +25,10 @@ Explanation: 1 appears at index 0.
 # commence testing structures to make this work.
 target: int = 4  
 arr: list= [1, 2, 3, 4, 5]
+
+half: int = ((len(arr)) // 2)
+
+for index, value in (enumerate(arr)):
+   if value == target:
+    print(index)
+    break
