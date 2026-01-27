@@ -55,12 +55,20 @@ sort_sequence: list = []
 for number in arr:
     if number == 0:
         sort_sequence.append(number)
-    elif number == 1:
-        sort_sequence.append(number)
-    elif number == 2:
-        sort_sequence.append(number)
-arr = sort_sequence
+        arr.remove(number)
 
+for number in arr:
+    if number == 1:
+        sort_sequence.append(number)
+        arr.remove(number)
+
+for number in arr:
+    if number == 2:
+        sort_sequence.append(number)
+        arr.remove(number)
+
+
+print(arr)  
 print(sort_sequence) 
 
 
