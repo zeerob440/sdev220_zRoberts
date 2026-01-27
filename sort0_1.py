@@ -59,7 +59,7 @@ for number in arr:
         sort_sequence.append(number)
     if number == 2:
         sort_sequence.append(number)
-#arr = sort_sequence
+arr = sort_sequence
 
 print(sort_sequence) 
 
