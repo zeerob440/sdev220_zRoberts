@@ -21,6 +21,7 @@ Explanation: 0s, 1s and 2s are segregated into ascending order.
 
 # It makes soup sandwiches. 
 def soupSandwichMaker(arr):
+    # stores sandwich ingredients 
     sort_sequence: list = []
     # get 0's into sort_sequence
     for number in arr:
@@ -49,28 +50,8 @@ soupSandwichMaker(arr)
 arr:list = [0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1] 
 
 soupSandwichMaker(arr)
-'''
-sort_sequence: list = []
-# get 0's into sort_sequence
-for number in arr:
-    if number == 0:
-        sort_sequence.append(number)
-        
-# get 1 into sort_sequence
-for number in arr:
-    if number == 1:
-        sort_sequence.append(number)
-       
-# get 2's into sort_sequence
-for number in arr:
-    if number == 2:
-        sort_sequence.append(number)
 
-# make arr == sort_sequence        
-arr = sort_sequence
-  
-print(arr) 
-'''
+
 
 
 
