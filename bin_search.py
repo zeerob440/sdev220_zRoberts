@@ -28,7 +28,7 @@ arr: list= [1, 2, 3, 4, 5]
 
 half: int = ((len(arr)) // 2)
 
-for index, value in (enumerate(arr)):
-   if value == target:
+for index, element in (enumerate(arr)):
+   if element == target:
     print(index)
     break
