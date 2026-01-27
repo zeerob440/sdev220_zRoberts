@@ -55,9 +55,9 @@ sort_sequence: list = []
 for number in arr:
     if number == 0:
         sort_sequence.append(number)
-    if number == 1:
+    elif number == 1:
         sort_sequence.append(number)
-    if number == 2:
+    elif number == 2:
         sort_sequence.append(number)
 arr = sort_sequence
 
