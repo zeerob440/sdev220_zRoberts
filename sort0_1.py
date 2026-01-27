@@ -3,7 +3,10 @@
 Sort 0s, 1s and 2s
 
 sort0_1.py sorts a list in ascending order without using sort.  
+
 Proudly Engineered by Zachary Roberts 26 JAN 2026
+
+"Soup sandwiches come in all shapes and sizes." - DS Gazely D Company 2/54 Infantry Infantry Training Brigade 2004
 
 SPECIFICATIONS:
 Given an array arr[] containing only 0s, 1s, and 2s. Sort the array in ascending order.
