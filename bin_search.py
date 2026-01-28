@@ -22,13 +22,30 @@ Output: 0
 Explanation: 1 appears at index 0.
 
 '''
-# commence testing structures to make this work.
-target: int = 4  
 arr: list= [1, 2, 3, 4, 5]
+# commence testing structures to make this work.
+def _binarySearchIndices(arr, target_index_location): 
+    # the left most index in a list
+    leftest_index: int = 0
+    #the right most index in a list
+rightest_index: int = (len(arr) - 1)
 
+print(rightest_index)
+
+    #while leftest_index <= rightest_index:
+        #center_index: int = leftest_index + (rightest_index - leftest_index) // 2
+
+
+
+
+
+'''target: int = 4  
+arr: list= [1, 2, 3, 4, 5]
+# return 3
 half: int = ((len(arr)) // 2)
 
 for index, element in (enumerate(arr)):
    if element == target:
     print(index)
-    break
+    break'''
+   
