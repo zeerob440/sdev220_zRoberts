@@ -23,14 +23,13 @@ Explanation: 1 appears at index 0.
 
 '''
 arr: list= [1, 2, 3, 4, 5]
-k = 4
+k = 9
 # commence testing structures to make this work.
 def binarySearchIndices(arr, k): 
     # the left most index in a list
     leftest_index: int = 0
     #the right most index in a list
     rightest_index: int = (len(arr) - 1)
-
     while leftest_index <= rightest_index:
         center_index: int = leftest_index + (rightest_index - leftest_index) // 2
 
@@ -39,25 +38,16 @@ def binarySearchIndices(arr, k):
         elif arr[center_index] > k:
             rightest_index = center_index -1
         else:
-            return center_index   
+            return center_index
+    #k: int = -1           
     return -1
 
+    
+if binarySearchIndices(arr, k) != -1:                
+    k_index_location: str = f'{k} found at index: {binarySearchIndices(arr, k)}'
+    print(k_index_location)
+else:
+    not_k_index_location: str = f'{k} does not exist. Search results in: {binarySearchIndices(arr, k)}'
+    print (not_k_index_location)
 
-k_index_location = binarySearchIndices(arr, k)
 
-print(k_index_location)
-
-
-
-
-
-'''target: int = 4  
-arr: list= [1, 2, 3, 4, 5]
-# return 3
-half: int = ((len(arr)) // 2)
-
-for index, element in (enumerate(arr)):
-   if element == target:
-    print(index)
-    break'''
-   
