@@ -23,17 +23,29 @@ Explanation: 1 appears at index 0.
 
 '''
 arr: list= [1, 2, 3, 4, 5]
+k = 4
 # commence testing structures to make this work.
-def _binarySearchIndices(arr, target_index_location): 
+def binarySearchIndices(arr, k): 
     # the left most index in a list
     leftest_index: int = 0
     #the right most index in a list
-rightest_index: int = (len(arr) - 1)
+    rightest_index: int = (len(arr) - 1)
 
-print(rightest_index)
+    while leftest_index <= rightest_index:
+        center_index: int = leftest_index + (rightest_index - leftest_index) // 2
 
-    #while leftest_index <= rightest_index:
-        #center_index: int = leftest_index + (rightest_index - leftest_index) // 2
+        if arr[center_index] < k:
+            leftest_index = center_index + 1
+        elif arr[center_index] > k:
+            rightest_index = center_index -1
+        else:
+            return center_index   
+    return -1
+
+
+k_index_location = binarySearchIndices(arr, k)
+
+print(k_index_location)
 
 
 
