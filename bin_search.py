@@ -48,22 +48,18 @@ def where_k():
         k_index_location: str = f'{k} found at index: {binarySearchIndices(arr, k)}\n'
         print(k_index_location)
     else:
-        not_k_index_location: str = f'{k} does not exist. Search results in: {binarySearchIndices(arr, k)}\n'
+        not_k_index_location: str = f'{k} does not exist. Search results: {binarySearchIndices(arr, k)}\n'
         print (not_k_index_location)
 
 arr: list= [1, 2, 3, 4, 5]
-k = 9
+k = 4
 where_k()
 
-'''   
-if binarySearchIndices(arr, k) != -1:                
-    k_index_location: str = f'{k} found at index: {binarySearchIndices(arr, k)}'
-    print(k_index_location)
-else:
-    not_k_index_location: str = f'{k} does not exist. Search results in: {binarySearchIndices(arr, k)}'
-    print (not_k_index_location)
-'''
 arr: list = [11, 22, 33, 44, 55]
 k: int = 445
+where_k()
+
+arr: list = [1, 1, 1, 1, 2]
+k: int = 1
 where_k()
 
