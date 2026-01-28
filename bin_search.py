@@ -22,8 +22,9 @@ Output: 0
 Explanation: 1 appears at index 0.
 
 '''
-arr: list= [1, 2, 3, 4, 5]
-k = 9
+
+
+
 # commence testing structures to make this work.
 def binarySearchIndices(arr, k): 
     # the left most index in a list
@@ -42,12 +43,27 @@ def binarySearchIndices(arr, k):
     #k: int = -1           
     return -1
 
-    
+def where_k():
+    if binarySearchIndices(arr, k) != -1:                
+        k_index_location: str = f'{k} found at index: {binarySearchIndices(arr, k)}\n'
+        print(k_index_location)
+    else:
+        not_k_index_location: str = f'{k} does not exist. Search results in: {binarySearchIndices(arr, k)}\n'
+        print (not_k_index_location)
+
+arr: list= [1, 2, 3, 4, 5]
+k = 9
+where_k()
+
+'''   
 if binarySearchIndices(arr, k) != -1:                
     k_index_location: str = f'{k} found at index: {binarySearchIndices(arr, k)}'
     print(k_index_location)
 else:
     not_k_index_location: str = f'{k} does not exist. Search results in: {binarySearchIndices(arr, k)}'
     print (not_k_index_location)
-
+'''
+arr: list = [11, 22, 33, 44, 55]
+k: int = 445
+where_k()
 
