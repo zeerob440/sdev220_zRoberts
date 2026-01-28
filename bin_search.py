@@ -33,8 +33,9 @@ def binarySearchIndices(arr, k):
     rightest_index: int = (len(arr) - 1)
     while leftest_index <= rightest_index:
         center_index: int = leftest_index + (rightest_index - leftest_index) // 2
-
-        if arr[center_index] < k:
+        if k == arr[0]:
+            return leftest_index
+        elif arr[center_index] < k:
             leftest_index = center_index + 1
         elif arr[center_index] > k:
             rightest_index = center_index -1
