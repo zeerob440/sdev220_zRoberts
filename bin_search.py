@@ -22,10 +22,7 @@ Output: 0
 Explanation: 1 appears at index 0.
 
 '''
-
-
-
-# commence testing structures to make this work.
+# it does a binary search of a list. 
 def binarySearchIndices(arr, k): 
     # the left most index in a list
     leftest_index: int = 0
@@ -40,10 +37,10 @@ def binarySearchIndices(arr, k):
         elif arr[center_index] > k:
             rightest_index = center_index -1
         else:
-            return center_index
-    #k: int = -1           
+            return center_index         
     return -1
 
+# it creates an answer to the enduring matter at hand. 
 def where_k():
     if binarySearchIndices(arr, k) != -1:                
         k_index_location: str = f'{k} found at index: {binarySearchIndices(arr, k)}\n'
