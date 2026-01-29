@@ -23,7 +23,7 @@ The app will then output the data in an easy-to-read and understandable format, 
   Type of roof: sun roof
 '''
 
-class  Vehicle:
+class  Vehicle():
     def __int__(self, car, truck, plane, boat, broomstick):
         self.car = car
         self.truck = truck
