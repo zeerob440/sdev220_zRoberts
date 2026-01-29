@@ -24,12 +24,18 @@ The app will then output the data in an easy-to-read and understandable format, 
 '''
 
 class  Vehicle():
-    def __int__(self, car, truck, plane, boat, broomstick):
-        self.car = car
-        self.truck = truck
-        self.plane = plane
-        self.boat = boat
-        self.broomstick = broomstick
+    def __int__(self, vehicle_type: str):
+        self.vehicle_type: str = vehicle_type
         
-
+class Automobile(Vehicle):
+    def __init__(self, vehicle_type: str, year: str, make: str, model: str, doors: int, roof: str):
+        super().__init__(vehicle_type)
+        self.year: int = year
+        self.make: str = make
+        self.model: str = model
+        if doors == 2 or doors == 4:
+          self.doors: int = doors
+        else:
+            raise ValueError("Doors must equal 2 or 4.")
+        self.roof: str = roof 
 
