@@ -36,6 +36,15 @@ class Automobile(Vehicle):
         if doors == 2 or doors == 4:
           self.doors: int = doors
         else:
-            raise ValueError("Doors must equal 2 or 4.")
-        self.roof: str = roof 
-
+            raise ValueError('Doors must equal 2 or 4.\n')
+        if roof.lower() == 'solid' or roof.lower() == 'sun roof':
+           self.roof: str = roof 
+        else:
+            raise ValueError('Roof must be "solid" or "sun roof\n')
+        
+year: int = int(input())
+make: str = input()
+model: str = input()
+doors: int =int(input())
+roof: str =(input())     
+car = Automobile('car', year, make, model, doors, roof)
