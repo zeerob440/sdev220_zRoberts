@@ -51,7 +51,5 @@ car = Automobile('car', year, make, model, doors, roof)
 print(car.vehicle_type, car.year, car.make, car.model, car.doors, car.roof)
 print(car.__dict__)
 
-car_attributes: list = ['Year:', 'Make:', 'Model:', 'Doors:', 'Roof:']
-
-for attribute in car_attributes:
-    print (attribute, car.__dict__) 
+for key, value in car.__dict__.items():
+    print (key.capitalize(),':', value) 
