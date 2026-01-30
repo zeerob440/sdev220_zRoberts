@@ -54,4 +54,4 @@ print(car.__dict__)
 car_attributes: list = ['Year:', 'Make:', 'Model:', 'Doors:', 'Roof:']
 
 for attribute in car_attributes:
-    print (attribute, car.vehicle_type) 
+    print (attribute, car.__dict__) 
