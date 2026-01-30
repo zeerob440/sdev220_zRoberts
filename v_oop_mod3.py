@@ -41,7 +41,7 @@ class Automobile(Vehicle):
            self.roof: str = roof 
         else:
             raise ValueError('Roof must be "solid" or "sun roof"\n')
-        
+# user input for car       
 year: int = (int(input('Enter year here: ')))
 make: str = input('Enter make here: ')
 model: str = input('Enter model here: ')
