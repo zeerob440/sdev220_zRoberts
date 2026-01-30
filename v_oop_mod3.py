@@ -42,9 +42,9 @@ class Automobile(Vehicle):
         else:
             raise ValueError('Roof must be "solid" or "sun roof\n')
         
-year: int = int(input())
-make: str = input()
-model: str = input()
-doors: int =int(input())
-roof: str =(input())     
+year: int = (int(input('Enter year here: ')))
+make: str = input('Enter make here: ')
+model: str = input('Enter model here: ')
+doors: int = (int(input('Enter door quantity here: ')))
+roof: str =(input('Enter roof type here: '))     
 car = Automobile('car', year, make, model, doors, roof)
