@@ -24,7 +24,7 @@ The app will then output the data in an easy-to-read and understandable format, 
 '''
 
 class  Vehicle():
-    def __int__(self, vehicle_type: str):
+    def __init__(self, vehicle_type: str):
         self.vehicle_type: str = vehicle_type
         
 class Automobile(Vehicle):
@@ -40,7 +40,7 @@ class Automobile(Vehicle):
         if roof.lower() == 'solid' or roof.lower() == 'sun roof':
            self.roof: str = roof 
         else:
-            raise ValueError('Roof must be "solid" or "sun roof\n')
+            raise ValueError('Roof must be "solid" or "sun roof"\n')
         
 year: int = (int(input('Enter year here: ')))
 make: str = input('Enter make here: ')
@@ -48,3 +48,4 @@ model: str = input('Enter model here: ')
 doors: int = (int(input('Enter door quantity here: ')))
 roof: str =(input('Enter roof type here: '))     
 car = Automobile('car', year, make, model, doors, roof)
+print(car.vehicle_type, car.year, car.make, car.model, car.doors, car.roof)
