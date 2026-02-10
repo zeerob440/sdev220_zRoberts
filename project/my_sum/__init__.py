@@ -3,3 +3,10 @@ def sum(arg):
     for val in arg:
         total += val
     return total
+
+alist: list = [5, 5, 5]
+
+result = sum(alist)
+
+print(result)
+
