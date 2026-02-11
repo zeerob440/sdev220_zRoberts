@@ -7,6 +7,6 @@ def sum(arg):
 alist: list = [5, 5, 5]
 
 result = sum(alist)
-
+# print check to ensure function is working
 print(result)
 
