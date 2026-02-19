@@ -1,6 +1,7 @@
 import random
 import multiprocessing
 import time
+import os
 #15.1 Use multiprocessing to create three separate processes. Make each one wait a random number of seconds between zero and one, print the current time, and then exit.
 # could not get this program to run in Juypter Lab, but was able to run it in Pycharm and VS Code in .py files
 def random_interval_0_1_sec_current_time_printing_device_function():
@@ -8,6 +9,7 @@ def random_interval_0_1_sec_current_time_printing_device_function():
     time.sleep(range_random)
     anchoring_time = time.ctime()
     print(anchoring_time)
+    print("PID:", os.getpid(), "| Time:", anchoring_time)
 
 if __name__ == "__main__":
     for i in range(3):
