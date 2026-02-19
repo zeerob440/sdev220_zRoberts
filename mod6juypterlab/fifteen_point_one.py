@@ -9,7 +9,7 @@ def random_interval_0_1_sec_current_time_printing_device_function():
         range_random: float = random.uniform(0, 1)
         time.sleep(range_random)
         print(anchoring_time)
-        print("PID:", os.getpid(), "| Time:", anchoring_time)
+        print(f'PID: {os.getpid()}, Time: {anchoring_time}')
 
 if __name__ == "__main__":
     for i in range(3):
